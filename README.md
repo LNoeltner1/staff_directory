@@ -1,3 +1,5 @@
+[Link](https://lnoeltner1.github.io/staff_directory/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
