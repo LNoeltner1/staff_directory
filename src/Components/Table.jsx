@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 const Table = (props) => {
@@ -15,7 +15,7 @@ const Table = (props) => {
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row"><img src={props.image} alt="staff-picture" /></th>
+                    <th scope="row"><img src={props.image} alt="staff" /></th>
                     <td>{props.first}</td>
                     <td>{props.last}</td>
                     <td>{props.email}</td>

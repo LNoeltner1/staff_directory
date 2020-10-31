@@ -1,6 +1,8 @@
-// import React from "react";
-// // , { Component }
-// // import axios from "axios";
+import React from "react";
+import axios from "axios";
+import API from "../utils/API";
+import Header from "./Header"
+import Table from "./Table"
 
 
 // function Search (props) {
