@@ -1,16 +1,14 @@
-import Header from "./Components/Header";
-import Search from "./Components/Search";
-import Table from "./Components/Table";
-import React, { Component } from "react";
+import Header from "./Components/Header.jsx";
+import Search from "./Components/Search.jsx";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
       <Search />
-      <Table />
     </div>
   );
-}
+};
 
 export default App;
