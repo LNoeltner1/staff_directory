@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./Header.css";
 
-function Header(props) {
-    return (
-        <div className="header">
-            <h1>Staff Directory</h1>
-            <p>Click on carrots to filter by heading or use search box to narrow your results by last name</p>      
-            <input type="text" name="search" placeholder="Search by Last Name..." onChange={props.handleInput} />
-        </div>
-    );
-};
+class Header extends Component {
+    render() {
+        return (
+            <div className="header">
+                <h1>Staff Directory</h1>
+                <p>Click on carrots to filter by heading or use search box to narrow your results by last name</p>      
+                <input placeholder="Search by Last Name..." onChange={(event) => this.props.handleInputChange(event)} />
+            </div>
+        );
+    }
+}
 
 export default Header;

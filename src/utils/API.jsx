@@ -1,16 +1,16 @@
-import axios from "axios";
+// import axios from "axios";
 
 // const URL = "https://randomuser.me/api/?results=20";
 
-export default {
-  populateTable: function () {
-    return axios.get("https://randomuser.me/api/?results=20");
-  }
-};
+// export default {
+//   populateTable: function() {
+//     return axios.get(URL);
+//   }
+// };
 
 
 
-// class Search extends Component {
+// class App extends Component {
 //   state = {
 //     search: "",
 //     results: [],
