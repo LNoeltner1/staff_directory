@@ -26,7 +26,7 @@ class HeaderTable extends Component {
   handleInputChange = (event) => {
     event.preventDefault();
     const userInput = event.target.value;
-    const searchResult = this.state.staff.filter((name) => name.name.last.indexOf(userInput) !== -1);
+    const searchResult = this.state.staff.filter((name) => name.last.indexOf(userInput) !== -1);
     console.log(userInput);
     this.setState({ narrowedStaff: searchResult });
   };
@@ -50,8 +50,8 @@ class HeaderTable extends Component {
         <>
             <div className="header">
                 <h1>Staff Directory</h1>
-                <p>Click on carrots to filter by heading or use search box to narrow your results by last name</p>      
-                <input placeholder="Search by Last Name..." onChange={(event) => this.props.handleInputChange(event)} />
+                <p>Click on last name to order by last name or use search box to narrow your results by last name</p>      
+                <input placeholder="Search by Last Name..." onChange={this.props.handleInputChange} />
             </div>
             <div className="container-fluid">
                 <table className="table table-striped">
@@ -70,7 +70,7 @@ class HeaderTable extends Component {
                             return (
                                 <tr>
                                     <th scope="row"><img src={results.picture.thumbnail} className="img-fluid" alt="thumbnail" /></th>
-                                    <td>{results.name.first}</td>
+                                    <td key={results.login.uuid}>{results.name.first}</td>
                                     <td>{results.name.last}</td>
                                     <td><a href={results.email}>{results.email}</a></td>
                                     <td>{results.dob.age}</td>
