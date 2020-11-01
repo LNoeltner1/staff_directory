@@ -3,6 +3,12 @@ import React from 'react';
 
 const Table = ({staffMember: {picture, name, email, dob}}) => {
     return (
+        <>
+        <div className="header">
+            <h1>Staff Directory</h1>
+            <p>Click on carrots to filter by heading or use search box to narrow your results by last name</p>      
+            <input placeholder="Search by Last Name..." onChange={(event) => this.props.handleInputChange(event)} />
+        </div>
         <table className="table table-striped">
             <thead>
                 <tr>
@@ -15,15 +21,16 @@ const Table = ({staffMember: {picture, name, email, dob}}) => {
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row"><img src={picture.thumbnail} className="img-fluid" alt="thumbnail" /></th>
+                    <th scope="row"></th>
+                    <td><img src={picture.thumbnail} className="img-fluid" alt="thumbnail" /></td>
                     <td>{name.first}</td>
                     <td>{name.last}</td>
                     <td><a href={email}>{email}</a></td>
                     <td>{dob.age}</td>
                 </tr>
             </tbody>
-
         </table>
+        </>
     );
 }
 
