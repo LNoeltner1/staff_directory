@@ -6,7 +6,7 @@ React Staff Directory
 
 ## Description
 
-This project is a staff directory with names pulled in from a random user API. When complete, it will have the ability to search for specific employees and the ability to sort by column header key.
+This project is a staff directory with names pulled in from a random user API.
 
 ## Table of Contents :
 
